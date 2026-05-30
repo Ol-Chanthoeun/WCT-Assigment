@@ -8,12 +8,16 @@
 
         <!-- Link to Favicon -->
         <link rel="icon" type="image/x-icon"
-            href="assets/images/icons/logo_it_service.ico">
+            href="../assets/images/icons/logo_it_service.ico">
 
         <!-- Link CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/responsive.css">
+        <link rel="stylesheet" href="../assets/css/services.css">
+
+        <!-- Boxicons -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
     </head>
     <body>
 
@@ -23,7 +27,7 @@
 
                 <div class="logo">
                     <img class="logo-img"
-                        src="assets/images/logo/logo_it_service.png"
+                        src="../assets/images/logo/logo_it_service.png"
                         alt="IT Service Company Logo">
                     <h1>Our IT Services</h1>
                 </div>
@@ -34,7 +38,7 @@
                 <nav>
                     <ul>
                         <li><a href="/index.html">Home</a></li>
-                        <li><a href="pages/services.html">Services</a></li>
+                        <li><a href="../pages/services.html">Services</a></li>
                         <li><a href="assets/about">About Us</a></li>
                         <li><a href="assets/contact">Contact</a></li>
                     </ul>
@@ -44,67 +48,60 @@
         </header>
         <!-- End of Header -->
 
-        <!-- Start of Main Content -->
-        <main class="container">
+        <section class="hero-service">
+            <div class="container">
+                <div class="hero-service-wrapper">
 
-            <div class="hero-section">
-                <div class="hero-img">
-                    <img src="assets/images/hero/section_home.png"
-                        alt="IT Services">
-                </div>
+                    <div class="hero-service-content">
+                        <p class="subtitle"><i class="bx bx-check-shield"></i>
+                            Trusted Digital Services & License Keys
+                        </p>
 
-                <div class="hero-content">
-                    <h2>សេវាកម្មរបស់យើង មានទទួលដោះស្រាយបញ្ហាផ្សេងៗ</h2>
-                    <p class="typing-text">ដូចជា សេវាកម្មកុំព្យូទ័រ,
-                        សេវាកម្មដំឡើង,
-                        និងលក់ License ជាដើម។</p>
-                </div>
-            </div>
+                        <h1>
+                            Premium Digital <br>
+                            <span class="highlight">Services & License Keys</span> 
+                        </h1>
 
-            <div id="services">
-                <h2 class="section-title">IT Services</h2>
+                        <p class="description">
+                            ទិញ License Keys និងសេវាកម្ម Digital
+                            ដ៏ល្អបំផុត សុវត្ថិភាព និងតម្លៃសមរម្យ។
+                        </p>
 
-                <div class="services-grid">
-                    <div class="service-card">
-                        <img src="assets/images/home_screen/microsoft.png"
-                            alt="Windows Icon"
-                            class="service-icon">
-                        <h3>Windows</h3>
-                        <p>We have sell Windows licenses and provide
-                            installation support.</p>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-primary">
+                                View Services <i class="bx bx-chevron-right"></i>
+                            </a>
+
+                            <a href="#" class="btn btn-secondary"> <i class='bx bxl-telegram'></i>
+                                Contact Telegram
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="service-card">
-                        <img src="assets/images/home_screen/office.png"
-                            alt="Microsoft Office Icon"
-                            class="service-icon">
-                        <h3>Microsoft Office</h3>
-                        <p>We provide Microsoft Office licenses and installation
-                            support.</p>
+                    <div class="hero-service-image">
+                        <img src="../assets/images/hero/service-packages.png"
+                            alt="IT Services">
                     </div>
 
-                    <div class="service-card">
-                        <img
-                            src="assets/images/home_screen/software-installation.png"
-                            alt="Software Installation Icon"
-                            class="service-icon">
-                        <h3>Install Software</h3>
-                        <p>We offer professional software installation and
-                            configuration services.</p>
-                    </div>
-
-                    <div class="service-card">
-                        <img src="assets/images/home_screen/crack.png"
-                            alt="Software Cracking Icon"
-                            class="service-icon">
-                        <h3>Cracking Software</h3>
-                        <p>We provide software cracking services for various
-                            applications.</p>
-                    </div>
                 </div>
             </div>
-        </main>
-        <!-- End of Main Content -->
+        </section>
+
+        <!-- Category Filter -->
+        <section class="category-filter">
+            <div class="container">
+                <div class="filter-wrapper">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="windows">Windows</button>
+                    <button class="filter-btn" data-filter="office">Microsoft Office</button>
+                    <button class="filter-btn" data-filter="installation">Software Installation</button>
+                    <button class="filter-btn" data-filter="cracking">Cracking Software</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Cards Grid -->
+        
 
         <!-- Start of Footer -->
         <footer class="it-footer">
@@ -114,7 +111,9 @@
                     <div class="footer-brand">
                         <div class="footer-logo">
                             <div class="footer-logo-icon">
-                                <span><img src="assets/images/logo/logo_it_service.png" alt=""></span>
+                                <span><img
+                                        src="../assets/images/logo/logo_it_service.png"
+                                        alt></span>
                             </div>
                             <h2>Our IT Services</h2>
                         </div>
