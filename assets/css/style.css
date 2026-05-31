@@ -28,6 +28,7 @@ body {
   min-height: 100vh;
 }
 
+/* Good Point for Container */
 .container {
   max-width: 1400px;
   margin: 0 auto;
