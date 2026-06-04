@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  "routes": [
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+  ]
+}
