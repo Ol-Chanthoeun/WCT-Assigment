@@ -370,8 +370,22 @@
   color: #fff;
   padding: 10px 14px;
   border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
   font-size: 13px;
   font-weight: bold;
+}
+
+.card-footer a > i {
+  margin-left: 6px;
+  font-size: 16px;
+  align-items: center;
+  transition: 0.3s;
+  margin-right: 5px;
+}
+
+.card-footer a:hover > i {
+  transform: translateX(4px);
 }
 
 /* Tablet */
