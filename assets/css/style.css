@@ -212,6 +212,7 @@ nav ul li:last-child a::after {
     margin-top: 0.9rem;
     font-size: 1.1rem;
     color: #2c3e66;
+    margin-bottom: 2rem;
 }
 
 /* Typing */
@@ -235,6 +236,35 @@ nav ul li:last-child a::after {
         border-color: transparent;
     }
 }
+
+.hero-content .btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--secondary-color);
+    color: white;
+}
 /* End of Hero Section */
 
 /* Start of Services */
@@ -255,6 +285,9 @@ nav ul li:last-child a::after {
 }
 
 .service-card {
+  display: block;
+  align-items: center;
+  text-align: center;
   background: white;
   padding: 1.8rem;
   border-radius: 1.8rem;
@@ -282,6 +315,18 @@ nav ul li:last-child a::after {
 .service-card > img:hover {
   transform: translateY(-3px);
   box-shadow: 0px 10px 20px 2px rgba(160, 25, 111, 0.7);
+}
+
+.btn-card {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 #services {
