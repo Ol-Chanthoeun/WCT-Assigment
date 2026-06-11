@@ -96,6 +96,10 @@
         align-items: center;
         justify-content: center;
     }
+
+  .hero-section .hero-content h2 {
+    font-size: 1.8rem;
+}
 }
 
 /* Table */
