@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="../assets/css/responsive.css">
         <link rel="stylesheet" href="../assets/css/about.css">
 
+        <!-- Link to Animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
 
@@ -47,7 +49,7 @@
 
         <!-- Start of Hero Section About -->
         <section class="about-hero">
-            <div class="about-content">
+            <div class="about-content" data-aos="fade-right">
                 <span>ABOUT US</span>
                 <h1>About Our <b>IT Services</b></h1>
                 <p>
@@ -60,7 +62,7 @@
         <!-- End of Hero Section About -->
 
         <!-- Start of about company -->
-        <section class="about-company">
+        <section class="about-company" data-aos="zoom-in" data-aos-delay="300">
 
             <!-- Left -->
             <div class="about-text">
@@ -114,7 +116,7 @@
 
         <!-- Start of information leader -->
         <section class="information-leader">
-            <div class="container">
+            <div class="container" data-aos="zoom-in" data-aos-delay="200">
                 <h2 class="subtitle">Meet Our IT Leader</h2>
                 <div class="leader-wrapper">
 
@@ -234,6 +236,18 @@
 
         </footer>
         <!-- End of Footer -->
+        
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- Initialize -->
+        <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        </script>
 
     </body>
 </html>

@@ -18,6 +18,9 @@
         <!-- link to boxicons -->
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet">
+        
+        <!-- Link to Animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
 
@@ -50,7 +53,7 @@
 
         <!-- Start of Contact Hero Section -->
         <section class="contact-hero">
-            <div class="container">
+            <div class="container" data-aos="fade-up">
                 <h2>Contact <span>Us</span></h2>
                 <p>Have questions or want to learn more about our services? Get
                     in touch with us today!</p>
@@ -60,7 +63,7 @@
         <!-- End of Contact Hero Section -->
 
         <!-- Start of Contact Info -->
-        <section class="contact-info-contact">
+        <section class="contact-info-contact" data-aos="zoom-in" data-aos-delay="200">
             <div class="info-card">
                 <div class="icon"><i class="bx bxs-phone"></i></div>
                 <h3>Phone / Telegram</h3>
@@ -92,7 +95,7 @@
         <!-- End of Contact Info -->
 
         <!-- Start of Contact Form -->
-        <section class="contact-section">
+        <section class="contact-section" data-aos="zoom-in" data-aos-delay="300">
             <div class="contact-container">
 
                 <!-- Left Form -->
@@ -202,7 +205,7 @@
 
         <!-- Start of Map -->
         <section class="map-section">
-            <div class="container">
+            <div class="container" data-aos="zoom-in" data-aos-delay="100">
                 <iframe
                     src="https://www.google.com/maps?q=Phnom%20Penh,%20Cambodia&output=embed"
                     width="100%"
@@ -300,5 +303,16 @@
         </footer>
         <!-- End of Footer -->
 
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- Initialize -->
+        <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        </script>
     </body>
 </html>

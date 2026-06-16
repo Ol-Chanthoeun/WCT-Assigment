@@ -17,6 +17,9 @@
         <!-- Boxicons -->
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet">
+
+        <!-- Link to Animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         
     </head>
     <body>
@@ -51,13 +54,13 @@
         <!-- Start of Main Content -->
         <main class="container">
 
-            <div class="hero-section">
+            <div class="hero-section" data-aos="fade-right">
                 <div class="hero-img">
                     <img src="assets/images/hero/section_home.png"
                         alt="IT Services">
                 </div>
 
-                <div class="hero-content">
+                <div class="hero-content" data-aos="fade-up">
                     <h2>សេវាកម្មរបស់យើង មានទទួលដោះស្រាយបញ្ហាផ្សេងៗ</h2>
                     <p class="typing-text">ដូចជា សេវាកម្មកុំព្យូទ័រ,
                         សេវាកម្មដំឡើង,
@@ -67,7 +70,7 @@
                 </div>
             </div>
 
-            <div id="services">
+            <div id="services" data-aos="zoom-in" data-aos-delay="200">
                 <h2 class="section-title">IT Services</h2>
 
                 <div class="services-grid">
@@ -198,6 +201,18 @@
 
         </footer>
         <!-- End of Footer -->
+
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- Initialize -->
+        <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        </script>
 
     </body>
 </html>

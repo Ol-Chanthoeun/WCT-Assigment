@@ -18,6 +18,9 @@
         <!-- Boxicons -->
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet">
+        
+        <!-- Link to Animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     </head>
     <body>
@@ -52,7 +55,7 @@
         <!-- Start of Hero Section -->
         <section class="hero-service">
             <div class="container">
-                <div class="hero-service-wrapper">
+                <div class="hero-service-wrapper" data-aos="fade-right">
 
                     <div class="hero-service-content">
                         <p class="subtitle"><i class="bx bx-check-shield"></i>
@@ -97,7 +100,7 @@
         <!-- Category Filter -->
         <section class="category-filter">
             <div class="container">
-                <div class="filter-wrapper">
+                <div class="filter-wrapper" data-aos="fade-up">
                     <button class="filter-btn active"
                         data-filter="all">All</button>
                     <button class="filter-btn"
@@ -116,7 +119,7 @@
 
         <!-- Service Cards Grid -->
         <section class="services">
-            <div class="container">
+            <div class="container" data-aos="zoom-in" data-aos-delay="200">
                 <div class="section-title-card" id="view-services">
                     <h2>Our Services</h2>
                     <span></span>
@@ -520,7 +523,7 @@
 
         <!-- Start of Why Choose Us -->
         <section class="why-choose-us">
-            <div class="container">
+            <div class="container" data-aos="fade-left">
                 <div class="section-title">
                     <h2>Why Choose Us</h2>
                     <span>ព្រោះយើងផ្តល់សេវាកម្មមានគុណភាព និងទំនុកចិត្ត</span>
@@ -673,6 +676,18 @@
 
         </footer>
         <!-- End of Footer -->
+
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- Initialize -->
+        <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        </script>
 
     </body>
 </html>
